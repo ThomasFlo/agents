@@ -4,8 +4,11 @@ Petit moteur JavaScript, sans dépendance, qui dessine des visuels de facilitati
 
 ## Fichiers
 
-- `moteur-fg-v1.min.js` : la version compacte, à charger dans une page.
-- `moteur-fg-v1.js` : la même version, lisible.
+- `moteur-fg-v2.min.js` : la version courante, compacte, à charger dans une page.
+- `moteur-fg-v2.js` : la même version, lisible.
+- `moteur-fg-v1.min.js`, `moteur-fg-v1.js` : la version précédente, conservée pour les visuels qui la référencent.
+
+La v2 ajoute la structure « couloirs » (un sujet par ligne, le temps en colonnes), le corps de flèche réglable et une alerte quand un texte a dû être fortement réduit.
 
 ## Utilisation
 
@@ -23,7 +26,7 @@ const VISUEL = {
   ]
 };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/ThomasFlo/agents@main/facilitation-graphique/moteur-fg-v1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ThomasFlo/agents@main/facilitation-graphique/moteur-fg-v2.min.js"></script>
 <script>FG.dessine(VISUEL);</script>
 </body></html>
 ```
@@ -31,5 +34,7 @@ const VISUEL = {
 La page affiche le dessin et trois boutons : GRILLE (repères pour recopier à la main), PNG et SVG.
 
 ## Versions
+
+jsDelivr met plusieurs heures à voir un nouveau fichier derrière `@main` : pour un fichier tout juste poussé, remplace `@main` par `@` suivi de l'identifiant du commit.
 
 Un fichier publié n'est jamais modifié : une évolution du moteur donne un nouveau fichier (`moteur-fg-v2.min.js`), pour que les visuels existants continuent de s'afficher.
