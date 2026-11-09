@@ -4,11 +4,11 @@ Petit moteur JavaScript, sans dépendance, qui dessine des visuels de facilitati
 
 ## Fichiers
 
-- `moteur-fg-v2.min.js` : la version courante, compacte, à charger dans une page.
-- `moteur-fg-v2.js` : la même version, lisible.
-- `moteur-fg-v1.min.js`, `moteur-fg-v1.js` : la version précédente, conservée pour les visuels qui la référencent.
+- `moteur-fg-v3.min.js` : la version courante, compacte, à charger dans une page.
+- `moteur-fg-v3.js` : la même version, lisible.
+- `moteur-fg-v1.*`, `moteur-fg-v2.*` : les versions précédentes, conservées pour les visuels qui les référencent.
 
-La v2 ajoute la structure « couloirs » (un sujet par ligne, le temps en colonnes), le corps de flèche réglable et une alerte quand un texte a dû être fortement réduit.
+La v2 a ajouté la structure « couloirs » (un sujet par ligne, le temps en colonnes), le corps de flèche réglable et une alerte quand un texte a dû être fortement réduit. La v3 permet d'écrire plusieurs textes côte à côte dans une même forme, et ajoute aux couloirs les pictos d'intitulés et les sujets en bande pleine largeur.
 
 ## Utilisation
 
@@ -26,7 +26,7 @@ const VISUEL = {
   ]
 };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/ThomasFlo/agents@main/facilitation-graphique/moteur-fg-v2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ThomasFlo/agents@main/facilitation-graphique/moteur-fg-v3.min.js"></script>
 <script>FG.dessine(VISUEL);</script>
 </body></html>
 ```
